@@ -12,6 +12,7 @@ import {MockSafuNFT} from "./MockSafuNFT.sol";
     Someone who locked can get a refund
     Someone who locked cannot get a refund after the lock period ends
     Someone who locked cannot redeem before lock ends
+    Someone who locked can redeem after lock ends
 */
 contract MockSafuNFTTest is DSTestPlus {
     MockSafuNFT safu;
@@ -63,6 +64,14 @@ contract MockSafuNFTTest is DSTestPlus {
         safu.buy{value: price}(true);
         vm.expectRevert("LOCKED");
         safu.redeem(0);
+    }
+
+    function test_CanRedeemAfterLockEnds() public {
+        safu.buy{value: price}(true);
+        vm.warp(lockEnd + 1 days);
+        safu.redeem(0);
+        assertEq(safu.vouchers(0), address(0));
+        assertEq(safu.balanceOf(address(this)), 1);
     }
 
     function onERC721Received(

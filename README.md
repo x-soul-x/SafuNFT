@@ -1,4 +1,4 @@
-# SafuNFT • [![tests](https://github.com/abigger87/femplate/actions/workflows/tests.yml/badge.svg)](https://github.com/abigger87/femplate/actions/workflows/tests.yml) [![lints](https://github.com/abigger87/femplate/actions/workflows/lints.yml/badge.svg)](https://github.com/abigger87/femplate/actions/workflows/lints.yml) ![GitHub](https://img.shields.io/github/license/abigger87/femplate)  ![GitHub package.json version](https://img.shields.io/github/package-json/v/abigger87/femplate)
+# SafuNFT • [![tests](https://github.com/x-soul-x/SafuNFT/actions/workflows/tests.yml/badge.svg)](https://github.com/x-soul-x/SafuNFT/actions/workflows/tests.yml) [![lints](https://github.com/x-soul-x/SafuNFT/actions/workflows/lints.yml/badge.svg)](https://github.com/x-soul-x/SafuNFT/actions/workflows/lints.yml) ![GitHub](https://img.shields.io/github/license/x-soul-x/SafuNFT)  ![GitHub package.json version](https://img.shields.io/github/package-json/v/x-soul-x/SafuNFT)
 
 
 A minimal contract with a lock and redeem/refund mechanism.

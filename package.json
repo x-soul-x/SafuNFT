@@ -1,15 +1,15 @@
 {
-    "name": "femplate",
-    "description": "Minimal Template for Foundry Projects",
-    "author": "Andreas Bigger <andreas@nascent.xyz>",
+    "name": "SafuNFT",
+    "description": "A minimal contract with a lock and redeem/refund mechanism.",
+    "author": "soul <cinder.soul@protonmail.com>",
     "license": "AGPL-3.0-only",
-    "version": "1.2.0",
+    "version": "1.0.0",
     "files": [
         "src/**/*.sol"
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/abigger87/femplate.git"
+        "url": "git+https://github.com/x-soul-x/SafuNFT.git"
     },
     "devDependencies": {
         "hardhat": "^2.7.0",

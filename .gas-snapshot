@@ -1,0 +1,6 @@
+MockSafuNFTTest:test_CannotRedeemBeforeLockEnds() (gas: 55998)
+MockSafuNFTTest:test_CannotRefundIfTooLate() (gas: 56586)
+MockSafuNFTTest:test_LockedCanRefund() (gas: 45903)
+MockSafuNFTTest:test_LockedCannotTransfer() (gas: 58152)
+MockSafuNFTTest:test_NoLockNoRefund() (gas: 82289)
+MockSafuNFTTest:test_NotLockedCanTransfer() (gas: 90222)

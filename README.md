@@ -1,19 +1,11 @@
-<img align="right" width="150" height="150" top="100" src="./assets/readme.jpg">
-
-# femplate • [![tests](https://github.com/abigger87/femplate/actions/workflows/tests.yml/badge.svg)](https://github.com/abigger87/femplate/actions/workflows/tests.yml) [![lints](https://github.com/abigger87/femplate/actions/workflows/lints.yml/badge.svg)](https://github.com/abigger87/femplate/actions/workflows/lints.yml) ![GitHub](https://img.shields.io/github/license/abigger87/femplate)  ![GitHub package.json version](https://img.shields.io/github/package-json/v/abigger87/femplate)
+# SafuNFT • [![tests](https://github.com/abigger87/femplate/actions/workflows/tests.yml/badge.svg)](https://github.com/abigger87/femplate/actions/workflows/tests.yml) [![lints](https://github.com/abigger87/femplate/actions/workflows/lints.yml/badge.svg)](https://github.com/abigger87/femplate/actions/workflows/lints.yml) ![GitHub](https://img.shields.io/github/license/abigger87/femplate)  ![GitHub package.json version](https://img.shields.io/github/package-json/v/abigger87/femplate)
 
 
-Backwards Compatible Template for Foundry and DappTools Projects.
+A minimal contract with a lock and redeem/refund mechanism.
 
 ## Overview
 
-[femplate](https://github.com/abigger87/femplate) is intended to be minimal while also providing backwards compatibility. Thus, both [DappTools](https://dapp.tools/) and [Foundry](https://github.com/gaskonst/foundry) are supported. Installation instructions for both are included below.
-
-## Getting Started
-
-Click `use this template` on [Github](https://github.com/abigger87/femplate) to create a new repository with this repo as the initial state.
-
-Run `make rename` to rename all instances of `femplate` with the name of your project/repository.
+SafuNFT is a minimal contract with an integrated overridable mechanism to, optionally, lock your NFT when you mint it. If you decide to lock it, you will be unable to transfer it but have the option to get a refund during a duration defined by the deployer of the contract.
 
 ## Blueprint
 
@@ -25,8 +17,8 @@ lib
 ├─ clones-with-immutable-args — https://github.com/wighawag/clones-with-immutable-args
 src
 ├─ tests
-│  └─ Greeter.t — "Greeter Tests"
-└─ Greeter — "A Minimal Greeter Contract"
+│  └─ SafuNFT.t — "SafuNFT Tests"
+└─ SafuNFT
 ```
 
 ## Development
